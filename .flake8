@@ -1,2 +1,8 @@
 [flake8]
+# 1. 让行长与 black 保持一致
 max-line-length = 88
+
+# 2. 忽略掉 black 风格冲突的规则
+# E203: 忽略切片中的冒号前空格
+# W503: 忽略操作符前换行 (black 的标准做法)
+ignore = E203, W503
